@@ -1,38 +1,38 @@
 <template>
   <nav class="bg-white dark:bg-gray-800 transition transform duration-200 ease-out">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+            <img class="h-12 -ml-2" src="../../assets/icon.svg" alt="Workflow">
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <router-link
                 to="/"
-                class="px-3 py-2 rounded-md text-base font-medium focus:outline-none"
-                :class="[$route.path === '/' ? 'text-gray-900 bg-gray-200 dark:text-white dark:bg-gray-900' : 'text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white']"
+                class="px-3 py-2 rounded-md text-base focus:outline-none"
+                :class="[$route.path === '/' ? 'text-primary bg-primary bg-opacity-10 dark:text-white dark:bg-gray-900 font-medium' : 'text-gray-500 dark:text-gray-300 hover:bg-primary hover:bg-opacity-5 hover:text-gray-600 dark:hover:bg-gray-700 dark:hover:bg-opacity-100 dark:hover:text-white']"
               >
                 Home
               </router-link>
               <router-link
                 to="/exams"
-                class="px-3 py-2 rounded-md text-base font-medium focus:outline-none"
-                :class="[$route.path === '/exams' ? 'text-gray-900 bg-gray-200 dark:text-white dark:bg-gray-900' : 'text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white']"
+                class="px-3 py-2 rounded-md text-base focus:outline-none"
+                :class="[$route.path === '/exams' ? 'text-primary bg-primary bg-opacity-10 dark:text-white dark:bg-gray-900 font-medium' : 'text-gray-500 dark:text-gray-300 hover:bg-primary hover:bg-opacity-5 hover:text-gray-600 dark:hover:bg-gray-700 dark:hover:bg-opacity-100 dark:hover:text-white']"
               >
                 Exams
               </router-link>
               <router-link
                 to="/remediations"
-                class="px-3 py-2 rounded-md text-base font-medium focus:outline-none"
-                :class="[$route.path === '/remediations' ? 'text-gray-900 bg-gray-200 dark:text-white dark:bg-gray-900' : 'text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white']"
+                class="px-3 py-2 rounded-md text-base focus:outline-none"
+                :class="[$route.path === '/remediations' ? 'text-primary bg-primary bg-opacity-10 dark:text-white dark:bg-gray-900 font-medium' : 'text-gray-500 dark:text-gray-300 hover:bg-primary hover:bg-opacity-5 hover:text-gray-600 dark:hover:bg-gray-700 dark:hover:bg-opacity-100 dark:hover:text-white']"
               >
                 Remediations
               </router-link>
               <router-link
                 to="/reports"
-                class=" px-3 py-2 rounded-md text-base font-medium focus:outline-none"
-                :class="[$route.path === '/reports' ? 'text-gray-900 bg-gray-200 dark:text-white dark:bg-gray-900' : 'text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white']"
+                class=" px-3 py-2 rounded-md text-base focus:outline-none"
+                :class="[$route.path === '/reports' ? 'text-primary bg-primary bg-opacity-10 dark:text-white dark:bg-gray-900 font-medium' : 'text-gray-500 dark:text-gray-300 hover:bg-primary hover:bg-opacity-5 hover:text-gray-600 dark:hover:bg-gray-700 dark:hover:bg-opacity-100 dark:hover:text-white']"
               >
                 Reports
               </router-link>
