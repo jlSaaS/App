@@ -9,7 +9,7 @@ export default ({ command, mode }) => {
     }
   } else {
     return {
-      base: '/exams-vue',
+      base: '/App',
       plugins: [vue()]
     }
   }
