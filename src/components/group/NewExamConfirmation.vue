@@ -7,7 +7,7 @@
         </div>
         <div class="mt-3 text-center sm:mt-5">
           <DialogTitle as="h3" class="text-lg leading-6 font-medium text-gray-900">
-            <div>Info received</div>
+            <div>Docs received</div>
           </DialogTitle>
           <div class="mt-2">
             <p class="text-sm text-gray-500">
@@ -16,7 +16,7 @@
               divide by 12...<br>
               multiply by the reciprocal...<br><br>
               Just kidding.  -->
-              The exam will be created by tomorrow.
+              We'll have the exam created by tomorrow.
             </p>
           </div>
         </div>
