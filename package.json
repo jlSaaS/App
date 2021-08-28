@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "git add dist -f && git commit -m \"adding dist\" && git subtree push --prefix dist origin gh-pages",
+    "deploy": "vite build && git add dist -f && git commit -m \"updating dist\" && git subtree push --prefix dist origin gh-pages",
     "serve": "vite preview"
   },
   "dependencies": {
