@@ -8,7 +8,7 @@
 
         <!-- This element is to trick the browser into centering the modal contents. -->
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-        <NewExam v-if="modalType === 'newExamInfo'" />
+        <NewExam v-if="modalType === 'newExamInfo'" :dragging="dragging" @draggingStopped="dragging = false" />
         <NewExamConfirmation v-if="modalType === 'newExamConf'" />
       </div>
     </Dialog>
@@ -36,6 +36,11 @@ export default {
       default: false
     }
   },
+  data () {
+    return {
+      dragging: false
+    }
+  },
   computed: {
     modalType () {
       return this.$store.state.app.modalType
@@ -43,15 +48,10 @@ export default {
   },
   methods: {
     stopDrop (ev) {
-      console.log('Not dropped in drop zone. Ignore.')
-      this.dropzoneStatus = null
+      this.dragging = false
     },
     dragOverHandler (ev) {
-      if (ev.target.id === 'drop-zone') {
-        this.dropzoneStatus = 'hovered-over'
-      } else {
-        this.dropzoneStatus = 'hovered-not-over'
-      }
+      this.dragging = true
     }
   }
 }
